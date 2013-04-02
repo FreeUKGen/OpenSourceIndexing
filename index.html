@@ -16,7 +16,6 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/FreeUKGen/OpenSourceIndexing">View on GitHub</a>
 
           <h1 id="project_title">Open Source Indexing</h1>
           <h2 id="project_tagline">Help build a general-purpose, open-source tool for crowdsourced indexing!</h2>
@@ -27,10 +26,19 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-      <p><i>Did you watch the volunteers indexing the 1940 Census and wish you could run a project like that on the records you care about?  Then read on...</i></p> 
-        <h2>The Documents</h2>
+      <p><em>Did you watch the volunteers indexing the 1940 Census and wish you could run a project like that for the records you care about?  Then read on...</em></p> 
 
-<p>Many documents are more usefully digitized into searchable databases than into text editions.  These include</p>
+<h2>The Challenge</h2>
+
+<p>Historic documents often contain handwriting, old fonts, or other text formats that OCR software can't handle.  We need humans--from volunteers to paid staff--to read the document images and transcribe what they see into databases which can be searched, analyzed, crawled, and used by researchers.  Until now those efforts have required organizations either to outsource indexing to external partners or to cobble together their own off-line or on-site systems.  </p>
+
+<p>Our goal is to build a tool that can be used by libraries, archives, museums, historical sites, genealogy and heritage societies to run their own indexing projects, under their own control.   </p>
+
+
+
+<h2>The Documents</h2>
+
+<p>Many documents contain structured data, so are more usefully digitized into searchable databases than into text editions.  These include:</p>
 
 <ul>
 <li>Muster rolls<br>
@@ -44,61 +52,56 @@
 <li>Church registers</li>
 <li>Manumissions</li>
 <li>School enrollments</li>
-</ul><h2>The Challenge</h2>
-
-<p>Historic documents often contain handwriting, old fonts, or other text formats that OCR software can't handle.  We need humans--from volunteers to paid staff--to read the document images and transcribe what they see into databases which can be searched, analyzed, crawled, and used by researchers.  Until now those efforts have required organizations either to outsource indexing to external partners or to cobble together their own off-line or on-site systems.  </p>
-
-<p>Our goal is to build a tool that can be used by libraries, archives, museums, historical sites, genealogy and heritage societies to run their own indexing projects.   </p>
+</ul>
 
 <h2>The Tool</h2>
 
 <p>We're basing our online indexing tool on Scribe, a tool developed by the Citizen Science Alliance from their <a href="http://oldweather.org/">Old Weather</a> project and deployed by the Bodleian Library for <a href="http://www.whats-the-score.org/">What's the score at the Bodleian</a>.  More recently, Scribe has been customized by New York Public Library Labs for their <a href="http://ensemble.nypl.org/">Ensemble</a> database of the performing arts.</p>
 
-<p>We're augmenting the Scribe foundation by adding a database that allows users to seamlessly search and view records created by the indexing tool and offline/legacy indexes imported via CSV files.  (This database includes a web-based search interface and APIs.)  We've also added a tool allowing administrators to upload images and associate data-entry templates with them.  Improvements to the data-entry UI and a system for reporting on indexing activity and managing volunteers will round out the effort.</p>
+<p>We're augmenting the Scribe transcription system by adding a database that allows users to search and view records created by the indexing tool.  We're also adding support for and offline/legacy transcripts imported via CSV files.  Improvements to the data-entry UI and a system for reporting on indexing activity and managing volunteers will round out the effort. (See the <a href="images/phase3.png">data flow diagram</a>.)</p>
 
-<p>The entire system will be released under an Apache license.  (In fact, the source code under development already is.)</p>
+<p>The entire system will be released under an Apache license.  (In fact, the <a href="https://github.com/FreeUKGen/MyopicVicar">source code</a> under development already is.)</p>
 
 <h2>The Invitation</h2>
 
 <p>We'd like to invite libraries, archives, and museums; historical, genealogy, and heritage societies to participate in the project.  Right now we need advice and examples of indexing projects that real
-organizations would like to run.  This would allow us to work with an eye on real data outside the UK parish registers and English census records which have been driving our development up to the present.  It would also demonstrate a real community interest in the project.</p>
+organizations would like to run.  This would allow us to work with an eye on real data outside the UK parish registers and English census records which have been driving our development up to the present. 
 
 <h3>What we need from you</h3>
 
 <p>Project definitions including:</p>
 
 <ul>
-<li>Sample image files (around 5 per project), </li>
+<li>Sample image files (around 5 per project in the format you'd use for access copies), </li>
 <li>A maximal spec for the data you'd like to collect,</li>
-<li>A minimal acceptable set of fields you need, and</li>
+<li>A minimal set of required fields you need, and</li>
 <li>A description of the material and goals of the project.</li>
-</ul><p>Projects can be:</p>
+</ul>
 
-<ul>
-<li>"Simple" documents in which one index entry corresponds
-to one line of text.</li>
-<li>"Complex" documents in which one entry corresponds to a more complex and lengthy set
-of fields.</li>
-<li>"Sparse" projects in which indexable text (e.g. personal names) may be scattered through a document of text you don't plan to transcribe.</li>
-</ul><p>These images and project specs will be published online and shared among collaborators.</p>
+<p>These images and project specs will be published online and shared among collaborators.</p>
 
 <p>We also need</p>
 
 <ul>
-<li>Commitment that someone from your organization could weigh in on discussions about the example projects and the tool.  (I'd expect this to take around five hours per month, mostly via email.)</li>
+<li>Commitment that someone from your organization could weigh in on discussions about the example projects and the tool.</li>
 </ul><h3>Contributing further</h3>
 
-<p>In addition to example indexing project definitions, we need</p>
+<p>In addition to example indexing project definitions, we need:</p>
 
 <ul>
-<li>Funding to continue development.  Our top priority is building a tool for our funders' indexing projects at <a href="http://www.freereg.org.uk/">FreeREG</a> and <a href="http://www.freecen.org.uk/">FreeCEN</a>.  Building features outside of the needs common to those projects (e.g. internationalization) will require more funds.</li>
-<li>Code contributions and help with design and programming.</li>
-<li>Publicity and endorsement to spread the word about Open Source Indexing</li>
+<li><strong>Funding</strong> to continue development.  Our top priority is building a tool for our funders' indexing projects at <a href="http://www.freereg.org.uk/">FreeREG</a> and <a href="http://www.freecen.org.uk/">FreeCEN</a>.  Building features outside of the needs common to those projects will require more funds.  Any donations made to FreeBMD (a charity registered in England and Wales, Number 1096940) which are designated for development will be applied to the project.  Direct funding of development efforts is an alternative which may be the best way to enhance or customise the tool to support your own project.</li>
+<li><strong>Code contributions</strong> and help with design and programming.</li>
+<li><strong>Publicity and endorsement</strong> to spread the word about Open Source Indexing.</li>
 </ul><h2>The People</h2>
 
 <p>Open Source Indexing is funded by FreeUKGen(a.k.a. FreeBMD), a UK-based non-profit dedicated to free access to genealogy data.  Open Source Indexing is being developed for FreeREG, which offers free indexes to UK parish registers from 1538-1837, and FreeCEN, which offers free indexes to the English and Welsh Census.  <a href="http://en.wikipedia.org/wiki/Ben_Laurie">Ben Laurie</a> is the FreeBMD trustee spearheading the effort and advising the project on Open Source and Open Data.</p>
 
-<p>Development and database design is managed by Ben Brumfield (<a href="https://github.com/benwbrum" class="user-mention">@benwbrum</a>), an independent software engineer with eight years of experience building manuscript transcription tools.  Support for offline indexes is built by Kirk Dawson, PhD, who has volunteered with FreeREG since 1998.</p>
+<p>Development and database design is managed by Ben Brumfield (<a href="https://github.com/benwbrum" class="user-mention">@benwbrum</a>), an independent software engineer with eight years of experience building manuscript transcription tools.  Support for offline indexes has been built by Kirk Dawson, PhD, who has volunteered with FreeREG since 1998.</p>
+
+<p>Additional development expertise has been generously donated by <a href="http://www.mocavo.com/">Mocavo</a>, the finest genealogy
+search engine on the planet.</p>
+
+
 
 <h2>Contact Us</h2>
 
